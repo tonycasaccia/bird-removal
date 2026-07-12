@@ -84,8 +84,7 @@ export default function Image() {
             Humane Bird Removal for Commercial Facilities
           </div>
           <div style={{ fontSize: 30, color: '#aebed8', maxWidth: 820 }}>
-            Fast, professional bird extraction for warehouses, distribution centers, and
-            industrial buildings across Southern California.
+            Rapid-response bird removal that keeps your business running. Humane, professional solutions for warehouses, distribution centers, retail facilities, and industrial buildings.
           </div>
         </div>
 

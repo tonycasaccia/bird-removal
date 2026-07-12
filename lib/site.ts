@@ -6,13 +6,13 @@ export const siteConfig = {
   email: "service@flightpathwildlife.com",
   emailHref: "mailto:service@flightpathwildlife.com",
   serviceArea: "Southern California",
-  owner: "Brandon Tolland",
-  hours: "Mon–Sat, 7:00 AM – 7:00 PM",
+  address: "1198 Pacific Coast Highway, Suite D Seal Beach, CA 90740 #261",
+  // owner: "Brandon Tolland",
+  // hours: "Mon–Sat, 7:00 AM – 7:00 PM",
 }
 
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const

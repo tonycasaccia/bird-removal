@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'FlightPath Wildlife Services | Humane Bird Removal for Commercial Facilities',
   description:
-    'Fast, professional, humane bird extraction services for warehouses, distribution centers, retail facilities, and industrial buildings throughout Southern California.',
+    'Rapid-response bird removal that keeps your business running. Humane, professional solutions for warehouses, distribution centers, retail facilities, and industrial buildings.',
 }
 
 export const viewport: Viewport = {

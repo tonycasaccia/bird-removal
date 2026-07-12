@@ -1,10 +1,10 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Phone, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { PlaceholderImage } from "@/components/placeholder-image"
 import { siteConfig } from "@/lib/site"
 
-const highlights = ["Humane methods", "Fast response", "Commercial expertise"]
+const highlights = ["Humane removal", "Rapid response", "No business interruption"]
 
 export function Hero() {
   return (
@@ -18,8 +18,7 @@ export function Hero() {
             Humane Bird Removal for Warehouses &amp; Commercial Facilities
           </h1>
           <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            Fast, professional bird extraction services for warehouses, distribution centers, retail facilities, and
-            industrial buildings throughout Southern California.
+            Rapid-response bird removal that keeps your business running. Humane, professional solutions for warehouses, distribution centers, retail facilities, and industrial buildings.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -48,7 +47,16 @@ export function Hero() {
           </ul>
         </div>
 
-        <PlaceholderImage label="Commercial facility hero photo" aspect="square" className="w-full lg:aspect-[4/3]" />
+        <div className="relative aspect-square w-full overflow-hidden rounded-lg border border-border lg:aspect-[4/3]">
+          <Image
+            src="/images/pigeons.jpg"
+            alt="A row of pigeons perched along a railing outside a building"
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   )

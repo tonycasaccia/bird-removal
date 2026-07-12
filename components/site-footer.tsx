@@ -52,7 +52,7 @@ export function SiteFooter() {
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="size-4 shrink-0" aria-hidden="true" />
-              {siteConfig.serviceArea}
+              {siteConfig.address}
             </li>
           </ul>
         </div>
