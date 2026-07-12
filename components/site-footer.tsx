@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Bird, Mail, MapPin, Phone } from "lucide-react"
+import Image from "next/image"
+import { Mail, MapPin, Phone } from "lucide-react"
 import { navLinks, siteConfig } from "@/lib/site"
 
 export function SiteFooter() {
@@ -7,11 +8,14 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
         <div className="space-y-4">
-          <Link href="/" className="flex items-center gap-2" aria-label={`${siteConfig.name} home`}>
-            <span className="flex size-9 items-center justify-center rounded-md bg-primary-foreground/10">
-              <Bird className="size-5" aria-hidden="true" />
-            </span>
-            <span className="text-base font-bold tracking-tight">{siteConfig.name}</span>
+          <Link href="/" className="inline-flex items-center" aria-label={`${siteConfig.name} home`}>
+            <Image
+              src="/images/flightpath-logo.png"
+              alt={`${siteConfig.name} logo`}
+              width={120}
+              height={110}
+              className="h-20 w-auto"
+            />
           </Link>
           <p className="max-w-xs text-sm leading-relaxed text-primary-foreground/70">
             Humane, professional bird removal for warehouses, distribution centers, and commercial facilities across{" "}

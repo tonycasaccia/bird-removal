@@ -13,7 +13,7 @@ export default function AppleIcon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#1b2a4a',
+          background: '#282f3d',
         }}
       >
         {/* Lucide "bird" icon */}
@@ -22,7 +22,7 @@ export default function AppleIcon() {
           height="112"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#3a93d6"
+          stroke="#a3b083"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"

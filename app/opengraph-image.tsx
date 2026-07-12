@@ -5,10 +5,10 @@ export const alt = 'FlightPath Wildlife Services — Humane Bird Removal for Com
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
-// Brand colors (sRGB equivalents of the site's navy / ocean-blue palette)
-const NAVY = '#1d2b50'
-const OCEAN = '#2e72c2'
-const LIGHT = '#f4f6fb'
+// Brand colors (charcoal + sage green palette)
+const NAVY = '#282f3d'
+const OCEAN = '#829061'
+const LIGHT = '#f5f6f2'
 
 export default function Image() {
   return new ImageResponse(
@@ -83,7 +83,7 @@ export default function Image() {
           >
             Humane Bird Removal for Commercial Facilities
           </div>
-          <div style={{ fontSize: 30, color: '#aebed8', maxWidth: 820 }}>
+          <div style={{ fontSize: 30, color: '#b9c2ac', maxWidth: 820 }}>
             Rapid-response bird removal that keeps your business running. Humane, professional solutions for warehouses, distribution centers, retail facilities, and industrial buildings.
           </div>
         </div>
