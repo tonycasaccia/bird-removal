@@ -17,7 +17,7 @@ export function WhyChooseSection() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">Commercial Bird Removal</p>
             <h2 className="mt-2 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              A Bird Problem Is a Business Problem
+              A bird problem is a business problem
             </h2>
             <div className="mt-4 space-y-4 text-pretty text-base leading-relaxed text-muted-foreground">
               <p>

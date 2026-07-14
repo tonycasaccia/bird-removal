@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { CheckCircle2 } from "lucide-react"
 import { PageHeader } from "@/components/page-header"
-import { PlaceholderImage } from "@/components/placeholder-image"
 import { CtaSection } from "@/components/cta-section"
 import { services } from "@/lib/content"
 
@@ -16,7 +16,7 @@ export default function ServicesPage() {
     <>
       <PageHeader
         eyebrow="Services"
-        title="Comprehensive commercial bird removal"
+        title="Comprehensive commercial bird and wildlife removal"
         description="Bird removal is our specialty, supported by falconry-based deterrence and general wildlife removal so your facility has one dependable provider."
       />
 
@@ -41,11 +41,19 @@ export default function ServicesPage() {
                   ))}
                 </ul>
               </div>
-              <PlaceholderImage
-                label={`${service.title} photo`}
-                aspect="video"
-                className={index % 2 === 1 ? "lg:order-1" : undefined}
-              />
+              <div
+                className={`relative aspect-video w-full overflow-hidden rounded-lg border border-border ${
+                  index % 2 === 1 ? "lg:order-1" : ""
+                }`}
+              >
+                <Image
+                  src={service.image || "/placeholder.svg"}
+                  alt={service.imageAlt}
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
           ))}
         </div>

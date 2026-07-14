@@ -16,6 +16,8 @@ export interface ServiceItem {
   title: string
   description: string
   points: string[]
+  image: string
+  imageAlt: string
 }
 
 export const services: ServiceItem[] = [
@@ -29,6 +31,8 @@ export const services: ServiceItem[] = [
       "Nest removal and site clean-up",
       "Exclusion and prevention strategies",
     ],
+    image: "/images/pigeon-service.jpg",
+    imageAlt: "Two rock pigeons perched on a ledge against a concrete wall",
   },
   {
     icon: Feather,
@@ -40,6 +44,8 @@ export const services: ServiceItem[] = [
       "Resident flock management and dispersal",
       "Ideal for lots, rooftops, airports, and campuses",
     ],
+    image: "/images/falconry.jpg",
+    imageAlt: "A trained falcon perched on a handler's leather falconry glove",
   },
   {
     icon: PawPrint,
@@ -51,6 +57,8 @@ export const services: ServiceItem[] = [
       "Feral cats and other nuisance wildlife",
       "One provider for birds and wildlife",
     ],
+    image: "/images/raccoon.jpg",
+    imageAlt: "A raccoon foraging on the forest floor at dusk",
   },
 ]
 
