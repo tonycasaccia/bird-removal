@@ -1,14 +1,14 @@
 export const siteConfig = {
   name: "FlightPath Wildlife Services",
+  legalName: "FlightPath Wildlife Services LLC",
   shortName: "FlightPath",
-  phone: "(555) 123-4567",
-  phoneHref: "tel:+15551234567",
-  email: "service@flightpathwildlife.com",
-  emailHref: "mailto:service@flightpathwildlife.com",
-  serviceArea: "Southern California",
+  phone: "(858) 500-2345",
+  phoneHref: "tel:+18585002345",
+  email: "service@flightpathbirdremoval.com",
+  emailHref: "mailto:service@flightpathbirdremoval.com",
+  serviceArea: "Western U.S.",
   address: "1198 Pacific Coast Highway, Suite D Seal Beach, CA 90740 #261",
-  // owner: "Brandon Tolland",
-  // hours: "Mon–Sat, 7:00 AM – 7:00 PM",
+  hours: "24/7 Response",
 }
 
 export const navLinks = [

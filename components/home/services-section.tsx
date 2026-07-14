@@ -13,8 +13,8 @@ export function ServicesSection() {
             Bird removal built for commercial facilities
           </h2>
           <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground">
-            From a single trapped bird to recurring roosting problems, we handle the full scope of commercial bird
-            issues.
+            Bird removal is what we do best, backed by falconry-based deterrence and general wildlife removal to keep
+            your property protected.
           </p>
         </div>
 

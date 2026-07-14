@@ -18,8 +18,8 @@ export function SiteFooter() {
             />
           </Link>
           <p className="max-w-xs text-sm leading-relaxed text-primary-foreground/70">
-            Humane, professional bird removal for warehouses, distribution centers, and commercial facilities across{" "}
-            {siteConfig.serviceArea}.
+            Humane, professional bird removal for warehouses, distribution centers, and commercial facilities across the{" "}
+            {siteConfig.serviceArea}
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export function SiteFooter() {
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-primary-foreground/60 sm:flex-row sm:px-6 lg:px-8">
           <p>
-            &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+            &copy; {new Date().getFullYear()} {siteConfig.legalName}. All rights reserved.
           </p>
           <p>Licensed &amp; insured wildlife removal &mdash; {siteConfig.serviceArea}</p>
         </div>

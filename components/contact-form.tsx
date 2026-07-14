@@ -3,15 +3,9 @@
 import { useState, type FormEvent } from "react"
 import { CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { siteConfig } from "@/lib/site"
 
-const services = [
-  "Bird Extraction",
-  "Warehouse Bird Removal",
-  "Retail Facility Bird Removal",
-  "Industrial Facility Bird Removal",
-  "Wildlife Assessment",
-  "Prevention Consulting",
-]
+const services = ["Commercial Bird Removal", "Falconry & Bird Deterrence", "General Wildlife Removal"]
 
 const fieldClass =
   "w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/40"
@@ -21,6 +15,33 @@ export function ContactForm() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
+
+    const form = event.currentTarget
+    const data = new FormData(form)
+    const name = (data.get("name") as string) || ""
+    const company = (data.get("company") as string) || ""
+    const email = (data.get("email") as string) || ""
+    const phone = (data.get("phone") as string) || ""
+    const service = (data.get("service") as string) || ""
+    const message = (data.get("message") as string) || ""
+
+    const subject = `Service request${service ? ` — ${service}` : ""}${name ? ` from ${name}` : ""}`
+    const body = [
+      `Name: ${name}`,
+      `Company / Facility: ${company}`,
+      `Email: ${email}`,
+      `Phone: ${phone}`,
+      `Service needed: ${service}`,
+      "",
+      "Details:",
+      message,
+    ].join("\n")
+
+    // Route the submission to the FlightPath service inbox.
+    window.location.href = `mailto:${siteConfig.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      body,
+    )}`
+
     setSubmitted(true)
   }
 

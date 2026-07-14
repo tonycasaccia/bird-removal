@@ -8,17 +8,10 @@ import { siteConfig } from "@/lib/site"
 export const metadata: Metadata = {
   title: "Contact | FlightPath Wildlife Services",
   description:
-    "Request humane bird removal service for your facility. Contact FlightPath Wildlife Services across Southern California.",
+    "Request humane bird removal service for your facility. FlightPath Wildlife Services serves commercial facilities across the Western U.S.",
 }
 
-const serviceAreas = [
-  "Orange County",
-  "Los Angeles County",
-  "Riverside County",
-  "San Bernardino County",
-  "San Diego County",
-  "Ventura County",
-]
+const serviceAreas = ["California", "Nevada", "Arizona", "Utah", "Idaho", "New Mexico"]
 
 const contactDetails = [
   { icon: Phone, label: "Phone", value: siteConfig.phone, href: siteConfig.phoneHref },
@@ -80,11 +73,11 @@ export default function ContactPage() {
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">Service Area</p>
             <h2 className="mt-2 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Serving facilities across Southern California
+              Serving facilities across the Western U.S.
             </h2>
             <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              We provide commercial bird removal throughout the region. If your facility is in or near any of these
-              areas, we can help.
+              We provide commercial bird and wildlife removal throughout the Western United States. If your facility is
+              in or near any of these states, we can help.
             </p>
           </div>
 

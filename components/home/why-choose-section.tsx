@@ -7,8 +7,6 @@ const benefits = [
   "Humane bird removal methods",
   "Rapid response times",
   "Minimal business interruption",
-  "Commercial facility expertise",
-  "Prevention-focused recommendations",
 ]
 
 export function WhyChooseSection() {
@@ -19,15 +17,15 @@ export function WhyChooseSection() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">Commercial Bird Removal</p>
             <h2 className="mt-2 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Built for Commercial Facilities
+              A Bird Problem Is a Business Problem
             </h2>
             <div className="mt-4 space-y-4 text-pretty text-base leading-relaxed text-muted-foreground">
               <p>
-                Bird activity inside warehouses, distribution centers, retail facilities, and industrial buildings can
-                create safety, sanitation, and operational concerns. FlightPath Wildlife Services provides fast, humane
-                bird removal solutions designed specifically for commercial environments.
+                Birds inside a warehouse, plant, or retail space are more than a nuisance. They contaminate inventory, damage equipment, create health code concerns, and put your business at risk of regulatory violations. In many cases, that means failed inspections, costly cleanup, and unplanned downtime.
               </p>
-              <p>Our goal is simple: resolve the problem quickly while keeping your facility running normally.</p>
+              <p>
+               The longer birds remain inside your facility, the greater the risk to your operations and reputation. FlightPath responds quickly with safe, humane bird removal that minimizes disruption and helps keep your business running.
+              </p>
             </div>
 
             <ul className="mt-8 space-y-3">
